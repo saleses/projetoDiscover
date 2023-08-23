@@ -1,0 +1,83 @@
+<!--Montar estrutura HTML: digite ! + ENTER-->
+<!DOCTYPE html>
+<html lang="pt-br" class="light">
+    <head>
+      <!--Links de fontes do google fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+      <!--Fim do bloco de links para fonte do google fonts-->
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+      <!--Viewport é todo o corpo da visualização do dispositivo-->
+      <!-- O recurso media queries no css funciona se houver a tag viewport-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+      <title>DevLinks</title>
+      <!-- link referencia arquivo style.css -->
+      <link rel="stylesheet" href="style.css" >
+    </head>
+    <body>
+      <!-- ID=nome: identificadores para blocos de estilos css -->
+      <!-- Dica: digite hashtag + id + enter para autocompletar tags abaixo -->
+      <!-- Tag <div> utilizada para agrupar recursos css -->
+      <div id="container">
+        <div id="profile">
+          <img src="./assets/avatar.png">
+          <p>@maykbrito</p>
+        </div>
+        
+        <!--Botão switch-->
+        <div id="switch" onclick="toggleMode()">
+          <button></button>
+          <span></span>
+        </div>
+
+        <!--Lista html: <ul>, <ol> dentre outras tags são tipos de listas-->
+        <ul>
+          <li>
+            <a href="#" target="_blank">Inscrever-se no NLW</a>
+          </li>
+
+          <li>
+            <a href="#" target="_blank">Baixar meu e-book</a>
+          </li>
+
+          <li>
+            <a href="#" target="_blank">Ver meu portfólio</a>
+          </li>
+
+          <li>
+            <a href="#" target="_blank">Conheça o Explorer</a>
+          </li>
+        </ul>
+        <!-- Site com icones: https://ionic.io/ionicons -->
+        <div id="social-links">
+          <a href="https://github.com/saleses" target="_blank">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+
+          <a href="https://www.instagram.com/" target="_blank">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+
+          <a href="https://www.youtube.com/" target="_blank">
+            <ion-icon name="logo-youtube"></ion-icon>
+          </a>
+
+          <a href="https://www.linkedin.com/" target="_blank">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </div>
+
+        <footer>
+          Feito com amor pela <a href="https://rocketseat.com.br/" target="_blank">Rockeseat</a>
+        </footer>
+      </div>
+      <!--tags do site de icons para aceitar logos acima-->>
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+      <script src="./script.js"></script>
+
+    </body>
+</html>
